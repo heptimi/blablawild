@@ -7,4 +7,5 @@
     <string name="Date">Date</string>
     <string name="Departure">Departure</string>
     <string name="DAtenum">01/01/1970</string>
+    <string name="date_et_heure">31/12/1970 3h30 PM</string>
 </resources>
