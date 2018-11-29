@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">blablawild</string>
+    <string name="action_settings" translatable="false">Paramètre</string>
+    <string name="Seachitinary" translatable="false">Itinéraire</string>
+    <string name="search_text" translatable="false">Recherche</string>
+    <string name="Destination" translatable="false">Destination</string>
+    <string name="Departure" translatable="false">Depart</string>
+</resources>

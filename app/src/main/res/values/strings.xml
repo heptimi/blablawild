@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">blablawild</string>
-    <string name="action_settings">Settings</string>
-    <string name="Seachitinary">Search an intinerary</string>
+    <string name="Seachitinary">Itinarery</string>
     <string name="search_text">Search</string>
     <string name="Destination">Destination</string>
-    <string name="Date">Date</string>
+    <string name="Date" translatable="false">Date</string>
+    <string name="Datenum" translatable="false">01/01/1970</string>
+    <string name="date_et_heure" translatable="false">31/12/1970 3h30 PM</string>
+    <string name="action_settings">Setting</string>
     <string name="Departure">Departure</string>
-    <string name="DAtenum">01/01/1970</string>
-    <string name="date_et_heure">31/12/1970 3h30 PM</string>
+
 </resources>
