@@ -8,5 +8,6 @@
     <string name="date_et_heure" translatable="false">31/12/1970 3h30 PM</string>
     <string name="action_settings">Setting</string>
     <string name="Departure">Departure</string>
+    <string name="Toasttext">Error, please fill your departure &amp; your Destination</string>
 
 </resources>

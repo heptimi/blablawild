@@ -83,7 +83,7 @@ public class ItinerarySearchActivity extends AppCompatActivity {
             final EditText etDestination = (EditText) findViewById(R.id.etDestination);
             //final String stDestination = etDestination.getText().toString();
 
-            final Toast buttonToast = Toast.makeText(getApplicationContext(), "Error, please fill your departure & your Destination", Toast.LENGTH_SHORT);
+            final Toast buttonToast = Toast.makeText(getApplicationContext(), getString(R.string.Toasttext), Toast.LENGTH_SHORT);
 
             String stDeparture = etDeparture.getText().toString();
             String stDestination = etDestination.getText().toString();

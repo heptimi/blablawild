@@ -6,4 +6,5 @@
     <string name="search_text" translatable="false">Recherche</string>
     <string name="Destination" translatable="false">Destination</string>
     <string name="Departure" translatable="false">Depart</string>
+    <string name="Toasttext">Erreur, veuillez remplir les cases</string>
 </resources>

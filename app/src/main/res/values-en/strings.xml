@@ -6,4 +6,5 @@
     <string name="search_text" translatable="false">Search</string>
     <string name="Destination" translatable="false">Destination</string>
     <string name="Departure" translatable="false">Departure</string>
+    <string name="Toasttext">Error, please fill your departure & your Destination</string>
 </resources>
