@@ -67,7 +67,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:hint="@string/DAtenum"
+        android:hint="@string/Datenum"
         android:inputType="textPersonName|date"
         android:focusable="false"
         app:layout_constraintStart_toStartOf="parent"
