@@ -18,6 +18,8 @@ public class ItinerarySearchActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE_DEPARTURE = "fr.wcs.blablawild.MESSAGE";
     public static final String EXTRA_MESSAGE_DESTINATION = "fr.wcs.blablawild.MESSAGE2";
+   // public static final String EXTRA_PARCEL = "parcel";
+    String sdfString;
 
 
 
@@ -30,6 +32,8 @@ public class ItinerarySearchActivity extends AppCompatActivity {
 
         final Calendar myCalendar = Calendar.getInstance();
         final EditText edittext= (EditText) findViewById(R.id.etDate);
+
+
        final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
             @Override
@@ -68,13 +72,15 @@ public class ItinerarySearchActivity extends AppCompatActivity {
 
          String myFormat = "MM/dd/yy"; //In which you need put here
             SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
-
-            edittext.setText(sdf.format(myCalendar.getTime()));
+            sdfString = sdf.format(myCalendar.getTime());
+            edittext.setText(sdfString);
      }
 
 
 
         public void buttonSearch(View view) {
+
+        SearchModel searchModel;
 
             //final Button buttonSearch = (Button) findViewById(R.id.buttonSearch);
             final EditText etDeparture = (EditText) findViewById(R.id.etDeparture);
@@ -87,6 +93,7 @@ public class ItinerarySearchActivity extends AppCompatActivity {
 
             String stDeparture = etDeparture.getText().toString();
             String stDestination = etDestination.getText().toString();
+
             Intent intent = new Intent(this, ItineraryListActivity.class);
 
 
@@ -99,9 +106,11 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                 String stDeparture1 = etDeparture.getText().toString();
                 String stDestination1 = etDestination.getText().toString();
 
-                intent.putExtra(EXTRA_MESSAGE_DEPARTURE, stDeparture1);
-                intent.putExtra(EXTRA_MESSAGE_DESTINATION, stDestination1);
+                searchModel = new SearchModel(stDeparture1, stDestination1, sdfString);
 
+                //intent.putExtra(EXTRA_MESSAGE_DEPARTURE, stDeparture1);
+               // intent.putExtra(EXTRA_MESSAGE_DESTINATION, stDestination1);
+                intent.putExtra("searchModel", searchModel);
                 startActivity(intent);
                 //return;
             }
